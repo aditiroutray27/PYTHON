@@ -1,0 +1,15 @@
+def calculate_circle_area(radius):
+    return 3.141592653589793 * radius * radius
+
+radius = float(input("Input the radius of the circle: "))
+area = calculate_circle_area(radius)
+print(f"The area of the circle with radius {radius} is {area}")
+
+
+
+def get_file_extension(filename):
+    return filename.split('.')[-1]
+
+filename = input("Input the file name: ")
+extension = get_file_extension(filename)
+print(f"The extension of the file is: '{extension}'")
