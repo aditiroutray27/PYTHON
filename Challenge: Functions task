@@ -1,0 +1,20 @@
+def count_characters(input_string):
+    char_count = {}
+    for char in input_string:
+        char_count[char] = char_count.get(char, 0) + 1
+
+    for char, count in char_count.items():
+        print(f"{char} = {count:02}")
+
+user_input = input("Input: Please enter a string\n")
+count_characters(user_input)
+
+After running this , we input the string "Mississippi," 
+it will display the character counts as follows: 
+
+Input: Please enter a string
+Mississippi
+i = 04
+s = 04
+p = 02
+m = 01
